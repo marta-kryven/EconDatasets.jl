@@ -5,7 +5,7 @@ function readYahooAdjClose(dates::StepRange,
     ## parallelized version for multiple stocks
 
     nStocks = length(ticker)
-    allStocks = @parallel (joinSortedIdx_outer) for ii=1:nStocks
+    allStocks = @distributed(joinSortedIdx_outer) for ii=1:nStocks
         getAdjClose(dates, ticker[ii], freq)
     end
 
