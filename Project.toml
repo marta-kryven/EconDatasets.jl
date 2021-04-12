@@ -2,3 +2,4 @@ name = "EconDatasets"
 uuid = "562f5c66-7e5e-4212-a941-c5eaf01f4968"                                                                      
 version = "0.1.0"
 [deps]
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
