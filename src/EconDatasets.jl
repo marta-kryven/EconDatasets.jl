@@ -3,7 +3,7 @@ module EconDatasets
 
 using DataFrames
 using TimeSeries
-using Base.Dates
+using Dates
 
 export dataset,
 	getDataset,
